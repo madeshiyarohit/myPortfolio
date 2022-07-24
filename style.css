@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* RESET CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+:root {
+  --overlay-color: rgba(56, 51, 52, 0.7);
+  --text-white-color: #ebeaea;
+  --red-text-color: #ef3724;
+  --nav-bg-color: rgba(128, 128, 128, 0.7);
+}
+
+header {
+  padding-top: 20px;
+  background: linear-gradient(
+      to left,
+      var(--overlay-color) 0%,
+      var(--overlay-color) 100%
+    ),
+    url("./Assets/main-bg.jpg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+nav {
+  background-color: var(--nav-bg-color);
+}
+nav div {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav h1 {
+  font-weight: 500;
+  font-size: 44px;
+  color: var(--text-white-color);
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+nav ul li {
+  padding: 0 16px;
+  font-size: 18px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--text-white-color);
+}
+.imageText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.imageText p {
+  color: var(--text-white-color);
+  font-size: 28px;
+  line-height: 1.6;
+}
+.imageText h2 {
+  font-size: 68px;
+  padding: 16px 0;
+  font-weight: 600;
+  color: var(--text-white-color);
+}
+
+.imageText h2 span {
+  color: var(--red-text-color);
+}
+.imageText button {
+  background-color: rgba(239, 56, 36, 0.2);
+  color: var(--red-text-color);
+  padding: 16px 32px;
+  border: none;
+  cursor: pointer;
+  border-radius: 35px;
+  font-size: 18px;
+}
+.aboutMe {
+  display: flex;
+}
+.imageBox,
+.aboutMeContent {
+  width: 100%;
+  padding: 80px 0;
+}
+.imageBox img {
+  display: block;
+  width: 100%;
+}
+.imageBox div {
+  margin: 0 auto;
+  position: relative;
+  width: 50%;
+  aspect-ratio: 1/1.2;
+  z-index: 9;
+}
+.imageBox div::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 5px solid #758283;
+  top: 3%;
+  left: -8%;
+  z-index: -1;
+}
+.imageBox div::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 5px solid #758283;
+  right: -8%;
+  top: 8%;
+  z-index: -1;
+}
+.portfolioSection {
+  padding: 50px 0;
+  /* background-color: var(--nav-bg-color); */
+}
+.portfoliotext {
+  padding: 30px 0;
+}
+.portfoliotext p {
+  text-align: center;
+  font-size: 24px;
+}
+.portfoliotext h3 {
+  font-size: 48px;
+  text-align: center;
+}
+.projects {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.projectBox {
+  width: 33.33%;
+  aspect-ratio: 1/0.5;
+}
+
+.projectBox img {
+  width: 100%;
+  display: block;
+  height: 250px;
+  object-position: center;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.imageDiv {
+  height: 200px;
+  /* width: 90%; */
+  /* margin: 10px; */
+  overflow: hidden;
+  box-sizing: content-box;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.projectBox img:hover {
+  transform: scale(1.15);
+}
+.projectBoxMargin {
+  margin: 20px;
+  background-color: #ffffff;
+}
+
+.content {
+  padding: 24px 10px;
+}
+.projectBox .btns {
+  padding: 20px 0;
+  text-align: center;
+}
+.projectBox .btns button {
+  padding: 8px 16px;
+  margin-right: 10px;
+  background: #5b54fa;
+  border: none;
+  border-radius: 5px;
+}
+.projectBox .btns button a {
+  color: var(--text-white-color);
+  text-decoration: none;
+  font-size: 18px;
+}
