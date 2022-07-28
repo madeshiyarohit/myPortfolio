@@ -78,7 +78,8 @@
   nav h1 {
     font-size: 24px;
   }
-  .imageText h2 {
+  .imageText h2,
+  .connectMeSection h2 {
     font-size: 48px;
   }
 }
