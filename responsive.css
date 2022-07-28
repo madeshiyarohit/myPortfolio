@@ -87,4 +87,7 @@
   .content {
     padding: 0 0 24px 0;
   }
+  .projectBoxMargin {
+    margin: 20px 0;
+  }
 }
