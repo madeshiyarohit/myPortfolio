@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rohit Madeshiya</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <!-- Font Awesome Cdn  -->
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    />
   </head>
   <body>
     <div class="wrapper">
@@ -14,11 +21,12 @@
           <div>
             <h1>Rohit Madeshiya</h1>
             <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Projects</a></li>
-              <li><a href="">Blogs</a></li>
-              <li><a href="">Contact Me</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#project">Projects</a></li>
+              <!-- <li><a href="">Blogs</a></li> -->
+              <li><a href="#contact">Contact Me</a></li>
+              <li class="menu"><i class="fas fa-bars"></i></li>
             </ul>
           </div>
         </nav>
@@ -35,11 +43,11 @@
           <div>
             <img
               src="./Assets/Rohit Image 1.jpg"
-              alt="Rohit Madeshiya Image is Here !!!"
+              alt="Rohit Madeshiya Image is Here !"
             />
           </div>
         </div>
-        <div class="aboutMeContent">
+        <div class="aboutMeContent" id="about">
           <h2>Rohit Madeshiya</h2>
           <h3>Web Developer</h3>
           <p>
@@ -49,7 +57,7 @@
           </p>
           <ul>
             <li><span>From</span> : Haryana , India</li>
-            <li><span>Age</span> : 22</li>
+            <li><span>Age</span> : 21</li>
             <li><span>Gender</span> : Male</li>
           </ul>
           <button>
@@ -57,7 +65,7 @@
           </button>
         </div>
       </div>
-      <div class="portfolioSection">
+      <div class="portfolioSection" id="project">
         <div class="portfoliotext">
           <p>My Portfolio</p>
           <h3>See My Work</h3>
@@ -67,28 +75,59 @@
             <div class="projectBoxMargin">
               <div class="imageDiv">
                 <img
-                  src="./Assets/street style landing page.png"
-                  alt="street style landing page"
+                  src="./Assets/product-landing-page.png"
+                  alt="Product Landing Page"
                 />
               </div>
 
               <div class="content">
-                <h3>Bohemia Mama</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Deleniti, perspiciatis.
-                </p>
+                <h4>FOR : DESKTOP || MOBILE</h4>
+                <h3>Product Landing Page !</h3>
+
                 <div class="btns">
                   <button>
                     <a
-                      href="https://street-style-landing-page.netlify.app/"
+                      href="https://product-landing-page-complete.netlify.app/"
                       target="_blank"
                       >Live Website</a
                     >
                   </button>
                   <button>
                     <a
-                      href="https://github.com/madeshiyarohit/Street-Style-Landing-Page"
+                      href="https://github.com/madeshiyarohit/Product-Design-LandingPage"
+                      target="_blank"
+                      >GitHub Link</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="projectBox">
+            <div class="projectBoxMargin">
+              <div class="imageDiv">
+                <img
+                  src="./Assets/hosting landing page.png"
+                  alt="street style landing page"
+                />
+              </div>
+
+              <div class="content">
+                <h4>FOR : DESKTOP || MOBILE</h4>
+                <h3>Hosting Landing Page !</h3>
+
+                <div class="btns">
+                  <button>
+                    <a
+                      href="https://hosting-landing-page.netlify.app/"
+                      target="_blank"
+                      >Live Website</a
+                    >
+                  </button>
+                  <button>
+                    <a
+                      href="https://github.com/madeshiyarohit/Hosting-Landing-Page"
                       target="_blank"
                       >GitHub Link</a
                     >
@@ -101,27 +140,25 @@
             <div class="projectBoxMargin">
               <div class="imageDiv">
                 <img
-                  src="./Assets/restaurant and food page.png"
-                  alt="restaurant food"
+                  src="./Assets/busisness landing page.png"
+                  alt="Busisness landing page "
                 />
               </div>
               <div class="content">
-                <h3>Bohemia Mama</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Deleniti, perspiciatis.
-                </p>
+                <h4>FOR : DESKTOP || MOBILE</h4>
+                <h3>Busisness Landing Page !</h3>
+
                 <div class="btns">
                   <button>
                     <a
-                      href="https://food-restaurant-home-page.netlify.app/"
+                      href="https://busisness-landing-page.netlify.app/"
                       target="_blank"
                       >Live Website</a
                     >
                   </button>
                   <button>
                     <a
-                      href="https://github.com/madeshiyarohit/Food-Restaurant-Home-Page"
+                      href="https://github.com/madeshiyarohit/Busisness-Landing-Page"
                       target="_blank"
                       >GitHub Link</a
                     >
@@ -133,26 +170,24 @@
           <div class="projectBox">
             <div class="projectBoxMargin">
               <div class="imageDiv">
-                <img src="./Assets/product home page.png" alt="prouct" />
+                <img src="./Assets/saas landing page.png" alt="prouct" />
               </div>
 
               <div class="content">
-                <h3>Bohemia Mama</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Deleniti, perspiciatis.
-                </p>
+                <h4>FOR : DESKTOP || MOBILE</h4>
+                <h3>SAAS Landing Page !</h3>
+
                 <div class="btns">
                   <button>
                     <a
-                      href="https://product-home-page-headphone.netlify.app/"
+                      href="https://saas-landing-home-page.netlify.app/"
                       target="_blank"
                       >Live Website</a
                     >
                   </button>
                   <button>
                     <a
-                      href="https://github.com/madeshiyarohit/Product-HomePage"
+                      href="https://github.com/madeshiyarohit/Saas-Landing-Page"
                       target="_blank"
                       >GitHub Link</a
                     >
@@ -164,23 +199,23 @@
           <div class="projectBox">
             <div class="projectBoxMargin">
               <div class="imageDiv">
-                <img src="./Assets/veefresh.png" alt="veefresh" />
+                <img src="./Assets/my portfolio.png" alt="my portfolio" />
               </div>
               <div class="content">
-                <h3>Bohemia Mama</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Deleniti, perspiciatis.
-                </p>
+                <h4>FOR : DESKTOP || MOBILE</h4>
+                <h3>My Portfolio !</h3>
+
                 <div class="btns">
                   <button>
-                    <a href="https://veefresh.netlify.app/" target="_blank"
+                    <a
+                      href="https://rohit-madeshiya.netlify.app/"
+                      target="_blank"
                       >Live Website</a
                     >
                   </button>
                   <button>
                     <a
-                      href="https://github.com/madeshiyarohit/veefresh.github.io"
+                      href="https://github.com/madeshiyarohit/myPortfolio"
                       target="_blank"
                       >GitHub Link</a
                     >
@@ -197,11 +232,9 @@
               </div>
 
               <div class="content">
-                <h3>Bohemia Mama</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Deleniti, perspiciatis.
-                </p>
+                <h4>FOR : DESKTOP || MOBILE</h4>
+                <h3>BabeBox Cosmetics !</h3>
+
                 <div class="btns">
                   <button>
                     <a href="https://babebox.netlify.app/" target="_blank"
@@ -226,11 +259,9 @@
               </div>
 
               <div class="content">
-                <h3>Bohemia Mama</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Deleniti, perspiciatis.
-                </p>
+                <h4>FOR : DESKTOP || MOBILE</h4>
+                <h3>Bohemia Mama !</h3>
+
                 <div class="btns">
                   <button>
                     <a href="https://bohemia-mama.netlify.app/" target="_blank"
@@ -254,11 +285,9 @@
                 <img src="./Assets/monster rolodex.png" alt="moster rolodex" />
               </div>
               <div class="content">
-                <h3>Bohemia Mama</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Deleniti, perspiciatis.
-                </p>
+                <h4>FOR : DESKTOP || MOBILE</h4>
+                <h3>Rolodex Monster !</h3>
+
                 <div class="btns">
                   <button>
                     <a
@@ -286,11 +315,9 @@
               </div>
 
               <div class="content">
-                <h3>Bohemia Mama</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Deleniti, perspiciatis.
-                </p>
+                <h4>FOR : DESKTOP</h4>
+                <h3>Plant Landing Page !</h3>
+
                 <div class="btns">
                   <button>
                     <a
@@ -317,11 +344,9 @@
               </div>
 
               <div class="content">
-                <h3>Bohemia Mama</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Deleniti, perspiciatis.
-                </p>
+                <h4>FOR : DESKTOP</h4>
+                <h3>Crypto Landing Page !</h3>
+
                 <div class="btns">
                   <button>
                     <a
@@ -351,11 +376,9 @@
               </div>
 
               <div class="content">
-                <h3>Bohemia Mama</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Deleniti, perspiciatis.
-                </p>
+                <h4>FOR : DESKTOP</h4>
+                <h3>Digital Marketing Page !</h3>
+
                 <div class="btns">
                   <button>
                     <a
@@ -385,11 +408,9 @@
               </div>
 
               <div class="content">
-                <h3>Bohemia Mama</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Deleniti, perspiciatis.
-                </p>
+                <h4>FOR : DESKTOP</h4>
+                <h3>Web Design Landing Page !</h3>
+
                 <div class="btns">
                   <button class="liveLink">
                     <a
@@ -416,11 +437,9 @@
               </div>
 
               <div class="content">
-                <h3>Bohemia Mama</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Deleniti, perspiciatis.
-                </p>
+                <h4>FOR : DESKTOPE</h4>
+                <h3>calculator !</h3>
+
                 <div class="btns">
                   <button>
                     <a
@@ -443,24 +462,261 @@
           <div class="projectBox">
             <div class="projectBoxMargin">
               <div class="imageDiv">
-                <img src="./Assets/bohemia.png" alt="Bohemia Mama" />
+                <img src="./Assets/veefresh.png" alt="veefresh" />
               </div>
 
               <div class="content">
-                <h3>Bohemia Mama</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Deleniti, perspiciatis.
-                </p>
+                <h4>FOR : DESKTOP</h4>
+                <h3>Veefresh</h3>
+
                 <div class="btns">
-                  <button><a href="" target="_blank">Live Website</a></button>
-                  <button><a href="" target="_blank">GitHub Link</a></button>
+                  <button>
+                    <a href="https://veefresh.netlify.app/" target="_blank"
+                      >Live Website</a
+                    >
+                  </button>
+                  <button>
+                    <a
+                      href="https://github.com/madeshiyarohit/veefresh.github.io"
+                      target="_blank"
+                      >GitHub Link</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="projectBox">
+            <div class="projectBoxMargin">
+              <div class="imageDiv">
+                <img
+                  src="./Assets/restaurant and food page.png"
+                  alt="veefresh"
+                />
+              </div>
+
+              <div class="content">
+                <h4>FOR : DESKTOP</h4>
+                <h3>Restaurant Food Page !</h3>
+
+                <div class="btns">
+                  <button>
+                    <a
+                      href="https://food-restaurant-home-page.netlify.app/"
+                      target="_blank"
+                      >Live Website</a
+                    >
+                  </button>
+                  <button>
+                    <a
+                      href="https://github.com/madeshiyarohit/Food-Restaurant-Home-Page"
+                      target="_blank"
+                      >GitHub Link</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="projectBox">
+            <div class="projectBoxMargin">
+              <div class="imageDiv">
+                <img
+                  src="./Assets/product home page.png"
+                  alt="product home page"
+                />
+              </div>
+
+              <div class="content">
+                <h4>FOR : DESKTOP</h4>
+                <h3>Product Home Page !</h3>
+
+                <div class="btns">
+                  <button>
+                    <a
+                      href="https://product-home-page-headphone.netlify.app/"
+                      target="_blank"
+                      >Live Website</a
+                    >
+                  </button>
+                  <button>
+                    <a
+                      href="https://github.com/madeshiyarohit/Product-HomePage"
+                      target="_blank"
+                      >GitHub Link</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="projectBox">
+            <div class="projectBoxMargin">
+              <div class="imageDiv">
+                <img
+                  src="./Assets/street style landing page.png"
+                  alt="street style "
+                />
+              </div>
+
+              <div class="content">
+                <h4>FOR : DESKTOP</h4>
+                <h3>Street Style Lanfing Page !</h3>
+
+                <div class="btns">
+                  <button>
+                    <a
+                      href="https://street-style-landing-page.netlify.app/"
+                      target="_blank"
+                      >Live Website</a
+                    >
+                  </button>
+                  <button>
+                    <a
+                      href="https://github.com/madeshiyarohit/Street-Style-Landing-Page"
+                      target="_blank"
+                      >GitHub Link</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="projectBox">
+            <div class="projectBoxMargin">
+              <div class="imageDiv">
+                <img src="./Assets/law home page.png" alt="law home page" />
+              </div>
+
+              <div class="content">
+                <h4>FOR : DESKTOP</h4>
+                <h3>law Home Page !</h3>
+
+                <div class="btns">
+                  <button>
+                    <a href="https://law-home-page.netlify.app/" target="_blank"
+                      >Live Website</a
+                    >
+                  </button>
+                  <button>
+                    <a
+                      href="https://github.com/madeshiyarohit/Law-Home-Page"
+                      target="_blank"
+                      >GitHub Link</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="projectBox">
+            <div class="projectBoxMargin">
+              <div class="imageDiv">
+                <img src="./Assets/interior.png" alt="interior" />
+              </div>
+
+              <div class="content">
+                <h4>FOR : DESKTOP</h4>
+                <h3>Interior Design Landing Page !</h3>
+
+                <div class="btns">
+                  <button>
+                    <a
+                      href="https://interior-design-landing-homepage.netlify.app/"
+                      target="_blank"
+                      >Live Website</a
+                    >
+                  </button>
+                  <button>
+                    <a
+                      href="https://github.com/madeshiyarohit/Interior-Design-Landing-Page"
+                      target="_blank"
+                      >GitHub Link</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="projectBox">
+            <div class="projectBoxMargin">
+              <div class="imageDiv">
+                <img
+                  src="./Assets/restaurant and food page.png"
+                  alt="veefresh"
+                />
+              </div>
+
+              <div class="content">
+                <h4>FOR : DESKTOP</h4>
+                <h3>Restaurant Food Page !</h3>
+
+                <div class="btns">
+                  <button>
+                    <a
+                      href="https://food-restaurant-home-page.netlify.app/"
+                      target="_blank"
+                      >Live Website</a
+                    >
+                  </button>
+                  <button>
+                    <a
+                      href="https://github.com/madeshiyarohit/Food-Restaurant-Home-Page"
+                      target="_blank"
+                      >GitHub Link</a
+                    >
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Connect Me -->
+      <div class="container" id="contact">
+        <div class="connectMeSection">
+          <h2>Contact Me</h2>
+          <div class="mainBox">
+            <div class="leftBox">
+              <img
+                src="./Assets/IMG_20190531_161542.jpg"
+                alt="Rohit Madeshiya Is Here !!!"
+              />
+            </div>
+            <div class="rightBox">
+              <form>
+                <input
+                  type="text"
+                  name="firstname"
+                  placeholder="YOUR FULL NAME"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="YOUR EMAIL"
+                  required
+                />
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="MESSAGE"
+                  required
+                />
+                
+                <div class="submitBtn">
+                  <button type="submit">SUBMIT</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>All Right Reserved@Rohitmadeshiya 2022.</p>
+      </footer>
     </div>
   </body>
 </html>

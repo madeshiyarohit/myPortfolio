@@ -96,7 +96,7 @@ video {
 }
 body {
   font-family: "Oswald", sans-serif;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #111111;
 }
 :root {
   --overlay-color: rgba(56, 51, 52, 0.7);
@@ -135,11 +135,17 @@ nav h1 {
 }
 nav ul {
   display: flex;
+  align-items: center;
   list-style-type: none;
 }
 nav ul li {
   padding: 0 16px;
   font-size: 18px;
+}
+nav ul li.menu {
+  color: var(--text-white-color);
+  font-size: 24px;
+  display: none;
 }
 nav ul li a {
   text-decoration: none;
@@ -179,11 +185,76 @@ nav ul li a {
 }
 .aboutMe {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.aboutMe .imageBox,
+.aboutMe .aboutMeContent {
+  width: 50%;
 }
 .imageBox,
 .aboutMeContent {
   width: 100%;
   padding: 80px 0;
+}
+.aboutMeContent ul {
+  list-style-type: none;
+  margin: 50px 0 50px 30px;
+}
+.aboutMeContent ul li:nth-child(1):after,
+.aboutMeContent ul li:nth-child(2):after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: -20px;
+  height: 100%;
+  width: 20px;
+  transform: translateY(-50%);
+  border-left: 2px solid white;
+  z-index: -1;
+}
+.aboutMeContent ul li:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: -28px;
+  transform: translateY(-50%);
+  top: 50%;
+  background-color: var(--red-text-color);
+  border: 2px solid var(--text-white-color);
+  border-radius: 50%;
+}
+.aboutMeContent ul li {
+  position: relative;
+  padding: 10px 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-white-color);
+}
+.aboutMeContent button {
+  padding: 8px 16px;
+  border: 2px solid var(--red-text-color);
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+.aboutMeContent button a {
+  transition: 0.5s;
+  text-decoration: none;
+  color: var(--text-white-color);
+  font-size: 16px;
+}
+.aboutMecontent button:hover > a {
+  color: var(--text-white-color) !important;
+}
+.aboutMeContent button:hover {
+  background-color: var(--red-text-color);
+}
+.aboutMeContent ul li span {
+  color: var(--red-text-color);
+  font-size: 24px;
+  font-weight: 600;
 }
 .imageBox img {
   display: block;
@@ -192,7 +263,7 @@ nav ul li a {
 .imageBox div {
   margin: 0 auto;
   position: relative;
-  width: 50%;
+  width: 40%;
   aspect-ratio: 1/1.2;
   z-index: 9;
 }
@@ -202,26 +273,17 @@ nav ul li a {
   width: 100%;
   height: 100%;
   border: 5px solid #758283;
-  top: 3%;
-  left: -8%;
+  top: 5%;
+  left: -12%;
   z-index: -1;
 }
-.imageBox div::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  border: 5px solid #758283;
-  right: -8%;
-  top: 8%;
-  z-index: -1;
-}
+
 .portfolioSection {
   padding: 50px 0;
-  /* background-color: var(--nav-bg-color); */
 }
 .portfoliotext {
   padding: 30px 0;
+  color: var(--text-white-color);
 }
 .portfoliotext p {
   text-align: center;
@@ -243,17 +305,26 @@ nav ul li a {
   width: 33.33%;
   aspect-ratio: 1/0.5;
 }
-
 .projectBox img {
   width: 100%;
   display: block;
-  height: 250px;
+  /* height: 250px; */
   object-position: center;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.5s ease;
 }
+/* .imageDiv {
+  height: 300px;
+  box-sizing: content-box;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  margin: 0 10px;
+}
+ */
+
 .imageDiv {
   height: 200px;
+  display: flex;
+  align-items: centerc;
   /* width: 90%; */
   /* margin: 10px; */
   overflow: hidden;
@@ -263,27 +334,166 @@ nav ul li a {
 .projectBox img:hover {
   transform: scale(1.15);
 }
+/* 
+.imageDiv iframe {
+  height: 100%;
+} */
+
 .projectBoxMargin {
   margin: 20px;
-  background-color: #ffffff;
+  background-color: #1e1e1e;
+  box-shadow: 10px 11px 19px -5px rgba(0, 0, 0, 0.25);
+  padding: 0 20px 0 20px;
 }
 
 .content {
-  padding: 24px 10px;
+  padding: 0 10px 24px 10px;
+}
+.content h4 {
+  font-size: 12px;
+  color: #758283;
+  padding-bottom: 4px;
+}
+
+.content h3 {
+  color: var(--text-white-color);
+  font-size: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
 .projectBox .btns {
   padding: 20px 0;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 .projectBox .btns button {
-  padding: 8px 16px;
-  margin-right: 10px;
-  background: #5b54fa;
+  outline: none;
+
+  text-transform: uppercase;
+  background-color: transparent;
   border: none;
-  border-radius: 5px;
+  padding: 8px 8px;
+  position: relative;
+  outline: none;
+  cursor: pointer;
 }
-.projectBox .btns button a {
+.projectBox .btns button:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  transition: 0.5s;
+  background-color: #ef4040;
+
+  z-index: 0;
+}
+.projectBox .btns button:hover:before {
+  width: 100%;
   color: var(--text-white-color);
+}
+.projectBox .btns button:hover a {
+  color: var(--text-white-color);
+  position: relative;
+  z-index: 99;
+}
+
+.projectBox .btns button a {
+  color: #ef4040;
   text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.aboutMeContent h2 {
+  font-size: 54px;
+  color: var(--text-white-color);
+}
+.aboutMeContent h3 {
+  color: var(--red-text-color);
+}
+.aboutMeContent p {
+  width: 80%;
   font-size: 18px;
+  color: var(--text-white-color);
+  padding: 20px 0;
+}
+.connectMeSection h2 {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  color: var(--text-white-color);
+  padding-bottom: 20px;
+  font-size: 56px;
+}
+
+.connectMeSection .mainBox {
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.connectMeSection .mainBox .leftBox img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 1/1.2;
+  object-fit: cover;
+  object-position: 0 0;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.connectMeSection .rightBox {
+  width: 60%;
+}
+.connectMeSection .rightBox form {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.connectMeSection .rightBox form input {
+  margin-bottom: 20px;
+  padding: 16px 10px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: var(--text-white-color);
+  border-bottom: 2px solid gray;
+}
+
+.connectMeSection .rightBox form input::placeholder {
+  color: var(--text-white-color);
+}
+.connectMeSection .leftBox {
+  width: 40%;
+}
+.submitBtn {
+  text-align: center;
+  margin-top: 20px;
+}
+.submitBtn button {
+  padding: 8px 16px;
+  font-weight: 600;
+  /* border: 2px solid var(--red-text-color); */
+  background-color: #ef4040;
+  border: none;
+  color: var(--text-white-color);
+}
+footer {
+  margin-top: 50px;
+  background-color: #1e1e1e;
+  text-align: center;
+  padding: 20px 0;
+}
+footer p {
+  color: var(--text-white-color);
 }

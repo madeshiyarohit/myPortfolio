@@ -1,0 +1,90 @@
+@media only screen and (max-width: 1024px) {
+  .projectBox {
+    width: 50%;
+  }
+  .imageBox div {
+    width: 55%;
+  }
+}
+@media only screen and (max-width: 925px) {
+  .projectBox .btns button a {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav ul li {
+    display: none;
+  }
+  nav ul li.menu {
+    display: block;
+  }
+  .aboutMe .imageBox,
+  .aboutMe .aboutMeContent {
+    width: 100%;
+    text-align: center;
+  }
+  .aboutMe .aboutMeContent ul {
+    width: 40%;
+    margin: 0 auto;
+  }
+  .aboutMe {
+    flex-wrap: wrap;
+  }
+  .aboutMeContent p {
+    margin: 0 auto;
+  }
+  .aboutMeContent button {
+    margin-top: 20px;
+  }
+  .aboutMe .aboutMeContent {
+    padding-bottom: 0;
+  }
+  .projectBox {
+    width: 100%;
+  }
+  .connectMeSection .rightBox form input {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .aboutMe .aboutMeContent {
+    padding-top: 0;
+  }
+  .aboutMeContent h2,
+  .portfoliotext h3 {
+    font-size: 44px;
+  }
+  .aboutMe .aboutMeContent ul {
+    width: 50%;
+  }
+  .connectMeSection .rightBox form input {
+    padding: 10px;
+    margin-bottom: 10px !important;
+  }
+  .connectMeSection form {
+    padding: 20px 0;
+  }
+  .connectMeSection .leftBox {
+    display: none;
+  }
+  .connectMeSection .rightBox {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  nav h1 {
+    font-size: 24px;
+  }
+  .imageText h2 {
+    font-size: 48px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .content {
+    padding: 0 0 24px 0;
+  }
+}
