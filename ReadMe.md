@@ -6,11 +6,7 @@
 
 ## 🌐 Socials:
 
-</br>
-
 [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/rohit.madeshiya.583) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/__.designer.__.rohit.__/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/rohit-madeshiya-4b7a63169/)
-
-</br>
 
 # 💻 Tech Stack:
 
@@ -18,20 +14,12 @@
 
 </br>
 
-# Work Done By Me !
+### My Project is looking like :
 
-You can check work done by me in my profile or you can visit my portfolio website.
+![Web Site Image](./Assets/complete%20ss.png)
+
+
+### You can Check it Live on Below Link : 
+
 
 [My Portfolio Website !](https://rohit-madeshiya.netlify.app)
-
-</br>
-
-# 📊 GitHub Stats:
-
-![](https://github-readme-stats.vercel.app/api?username=madeshiyarohit&theme=nightowl&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://github-readme-streak-stats.herokuapp.com/?user=madeshiyarohit&theme=nightowl&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=madeshiyarohit&theme=nightowl&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
-
-### ✍️ Random Dev Quote
-
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
